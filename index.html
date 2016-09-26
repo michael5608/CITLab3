@@ -25,14 +25,23 @@
         }
     </style>
     <body>
-        <div id=display>
-        New change
-        <div id='button'>
-            <button> <id = 'button'>COOL STUFF</button>
-        </div>
+        <div id=display></div>
+            New change
+        <button id = 'button'>COOL STUFF</button>
+    
+        <script>
+            var myBut = document.getElementById("button");
+            var disp = document.getElementById("display");
+            
+            myBut.onclick = function(){
+                disp.style.backgroundColor = "#AAA";
+                myBut.style.width = "80px";
+                myBut.style.height = "80px";
+                myBut.style.borderradius = "50px";
+                myBut.style.borderStyle = "50px";
+            }
+        </script>
     </body>
-
-
 
 
 </html>
